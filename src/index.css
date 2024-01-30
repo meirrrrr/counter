@@ -18,17 +18,17 @@
 body {
   display: flex;
   flex-direction: column;
-  background: var(--platinum);
 }
 
 header {
   display: flex;
   flex-direction: row;
-  background: var(--timberwolf);
+  background: var(--onyx);
+  opacity: 0.9;
   padding: 0 50px;
   align-items: center;
-  height: 90px;
-  margin-bottom: 80px;
+  height: 80px;
+  margin-bottom: 10px;
 }
 
 .header-title {
@@ -46,7 +46,7 @@ header {
 
 .header-title h1 {
   font-size: 24px;
-  color: var(--onyx);
+  color: var(--platinum);
 }
 
 header ul {
@@ -55,15 +55,16 @@ header ul {
   flex-direction: row;
   gap: 70px;
   margin-left: 700px;
+  color: white;
 }
 
 header li {
   cursor: pointer;
 }
 
-header li p {
+/* header li p {
   color: var(--onyx);
-}
+} */
 
 main {
   display: flex;
@@ -78,11 +79,16 @@ main {
   text-align: center;
   width: 600px;
   border-radius: 12px;
-  background: var(--ash-gray);
+  background: var(--onyx);
   opacity: 0.8;
   gap: 30px;
   padding: 50px 60px;
   margin-bottom: 30px;
+  margin-top: 80px;
+}
+
+.zeekr-container p {
+  color: var(--platinum);
 }
 
 .zeekr-header p {
@@ -93,7 +99,7 @@ main {
 .zeekr-main {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
 }
 
 .zeekr-main .zeekr-main__arab {
@@ -103,7 +109,7 @@ main {
 
 .zeekr-main .zeekr-main__translate {
   font-size: 14px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .btn-container {
@@ -112,11 +118,47 @@ main {
   justify-content: center;
 }
 
+.zeekr-footer {
+  margin-bottom: 5px;
+}
+
 .btn-container button {
-  height: 60px;
+  height: 40px;
   border-radius: 12px;
   border: none;
-  background: var(--ash-gray);
-  width: 80px;
+  background: var(--platinum);
+  width: 150px;
   font-size: 16px;
+  color: var(--onyx);
+}
+
+.about-container {
+  display: flex;
+  margin-top: 150px;
+  justify-content: center;
+  min-height: 400px;
+  /* background: var(--onyx); */
+  background-repeat: no-repeat;
+  background-size: auto 1000px;
+  padding: 0 300px;
+}
+
+.about-container__image {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.about-container h1,
+p {
+  color: var(--onyx);
+  text-align: center;
+}
+
+.about-container h1 {
+  font-size: 44px;
+}
+
+.about-container p {
+  font-size: 18px;
 }

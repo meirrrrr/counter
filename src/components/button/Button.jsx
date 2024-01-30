@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "/Users/meir/Desktop/muslim-founder/src/components/button/Button.css";
 
 function Button() {
   const [value, setValue] = useState(0);

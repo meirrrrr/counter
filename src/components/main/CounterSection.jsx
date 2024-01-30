@@ -1,6 +1,7 @@
 import zeekr from "./data";
+import Button from "../button/Button";
 
-function Main(props) {
+export default function CounterSection() {
   return (
     <main>
       <div className="zeekr-container">
@@ -14,9 +15,8 @@ function Main(props) {
         <div className="zeekr-footer">
           <p>{zeekr[0].translate}</p>
         </div>
+        <Button />
       </div>
     </main>
   );
 }
-
-export default Main;
