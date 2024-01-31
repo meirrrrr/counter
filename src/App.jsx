@@ -6,7 +6,7 @@ import CounterSection from "./components/main/CounterSection";
 import CafesSection from "./components/main/CafesSection";
 import "./index.css";
 
-function App() {
+export default function App() {
   const [tab, setTab] = useState("about");
 
   return (
@@ -33,5 +33,3 @@ function App() {
     </>
   );
 }
-
-export default App;

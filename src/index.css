@@ -7,6 +7,7 @@
   --feldgrau: #475841;
   --onyx: #3f403f;
   --onyx-darker: #6f706f70;
+  --ash-gray-ligter: #bbd7cb;
 }
 
 * {
@@ -30,6 +31,8 @@ header {
   align-items: center;
   height: 80px;
   margin-bottom: 10px;
+  width: 100%;
+  max-width: 100%;
 }
 
 .header-title {
@@ -52,15 +55,18 @@ header {
 
 header ul {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   flex-direction: row;
   gap: 70px;
   margin-left: 620px;
   color: white;
+  width: auto;
 }
 
 header li {
   cursor: pointer;
+  width: auto;
 }
 
 .button {
@@ -74,13 +80,13 @@ header li {
 }
 
 .button:hover {
-  transition: background 600ms ease;
-  text-decoration: underline;
+  transition: 400ms ease;
+  color: rgb(177, 174, 174);
 }
 
 .active {
   text-decoration: underline;
-  color: rgb(177, 174, 174);
+  /* color: rgb(177, 174, 174); */
 }
 
 main {
@@ -147,6 +153,7 @@ main {
   width: 150px;
   font-size: 16px;
   color: var(--onyx);
+  cursor: pointer;
 }
 
 .about-container {
@@ -181,3 +188,90 @@ p {
   letter-spacing: 0.4px;
   line-height: 1.5;
 }
+
+section {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.cafes-container {
+  display: flex;
+  flex-direction: column;
+  width: 1400px;
+  opacity: 0.8;
+  height: 600px;
+  border-radius: 20px;
+  padding: 30px;
+  position: relative;
+  width: 100%;
+}
+
+.cafes-container h1 {
+  font-size: 72px;
+}
+
+.cafes-container__headerText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.cafes-container__pargraphText {
+  padding: 0 50px;
+
+}
+
+.cafes-container__text {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.cafes-container__icons-container {
+  display: flex;
+  width: auto;
+  padding: 10px;
+  gap: 20px;
+  /* background: var(--ash-gray); */
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.cafes-container__icons-box {
+  width: 600px;
+  border-radius: 10px;
+  padding: 20px;
+  background: var(--onyx-darker);
+}
+
+@media (max-width: 800px) {
+  .cafes-container__icons-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  } 
+
+  .cafes-container__icons-box {
+    width: 300px;
+  }
+}
+
+
+
+.cafes-container__icons-box__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  height: 40px;
+}
+
+.cafes-container__icons-box__title h2 {
+  font-size: 20px;
+}
+
