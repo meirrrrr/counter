@@ -30,7 +30,7 @@ header {
   padding: 0 50px;
   align-items: center;
   height: 80px;
-  margin-bottom: 10px;
+  margin-bottom: 60px;
   width: 100%;
   max-width: 100%;
 }
@@ -59,7 +59,7 @@ header ul {
   list-style-type: none;
   flex-direction: row;
   gap: 70px;
-  margin-left: 620px;
+  margin-left: 800px;
   color: white;
   width: auto;
 }
@@ -192,7 +192,7 @@ p {
 section {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
+
 }
 
 .cafes-container {
@@ -261,8 +261,6 @@ section {
   }
 }
 
-
-
 .cafes-container__icons-box__title {
   display: flex;
   flex-direction: column;
@@ -275,3 +273,43 @@ section {
   font-size: 20px;
 }
 
+.cafes-menu-section {
+  margin-bottom: 50px;
+  width: 1400px;
+  background: var(--platinum);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.hor-line {
+  border: 1px solid black;
+}
+
+.cafes-menu-section__box {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+  gap: 30px;
+  padding: 30px;
+}
+
+.cafe-box {
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 8px;
+  background: url(./components/img/salamBro.png);
+  background-repeat: cover;
+  background-size: 100%;
+  width: 400px;
+}
+
+.cafe-box-title {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+
+.cafe-box p {
+  font-size: 12px;
+}

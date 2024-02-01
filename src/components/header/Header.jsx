@@ -32,9 +32,6 @@ export default function Header({ active, onChange }) {
               Cafes
             </NavButton>
           </li>
-          <li>
-            <NavButton>Courses</NavButton>
-          </li>
         </ul>
       </nav>
     </header>
