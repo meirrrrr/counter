@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/counter/static/css/main.15e03293.css",
+    "main.js": "/counter/static/js/main.af9e2bec.js",
+    "static/media/salamBro.png": "/counter/static/media/salamBro.ddb09c25221164b73c9c.png",
+    "static/media/header-logo.svg": "/counter/static/media/header-logo.8eaca44b53c75b78da4543c2412046af.svg",
+    "index.html": "/counter/index.html",
+    "main.15e03293.css.map": "/counter/static/css/main.15e03293.css.map",
+    "main.af9e2bec.js.map": "/counter/static/js/main.af9e2bec.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.15e03293.css",
+    "static/js/main.af9e2bec.js"
+  ]
+}
